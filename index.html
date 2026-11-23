@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistemas de México · Vista Explotada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/ecosistemas.css">
+</head>
+<body>
+    <main class="studio-stage">
+        <!-- Selector superior de ecosistemas (estilo discreto tipo estudio) -->
+        <nav class="biome-switcher" aria-label="Selector de ecosistemas de México">
+            <button class="biome-pill active" data-index="0">01 · Matorral</button>
+            <button class="biome-pill" data-index="1">02 · Selva Húmeda</button>
+            <button class="biome-pill" data-index="2">03 · Bosque Templado</button>
+            <button class="biome-pill" data-index="3">04 · Bosque de Niebla</button>
+            <button class="biome-pill" data-index="4">05 · Pastizal</button>
+            <button class="biome-pill" data-index="5">06 · Manglar y Arrecife</button>
+        </nav>
+
+        <!-- Tarjeta Principal estilo Flyer Editorial (60% Marfil Antiguo / 30% Negro Piano) -->
+        <article class="flyer-card" id="flyerCard">
+            <!-- Encabezado superior del flyer -->
+            <header class="flyer-header">
+                <div class="brand-lockup">
+                    <span class="brand-badge" aria-hidden="true">M</span>
+                    <span class="brand-name">BIOMAS MX</span>
+                </div>
+
+                <div class="header-actions">
+                    <span class="exploded-tag" id="explodedIndexTag">01 &nbsp;·&nbsp; VISTA EXPLOTADA</span>
+                    <button type="button" class="toggle-explode-btn" id="toggleExplodeBtn" aria-pressed="true" title="Alternar separación de estratos">
+                        <span class="status-dot"></span>
+                        <span id="toggleExplodeLabel">Estratos: Separados</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Título Hero centrado -->
+            <section class="flyer-hero">
+                <h1 class="hero-title" id="heroTitle">Matorral Xerófilo.</h1>
+                <p class="hero-subtitle" id="heroSubtitle">Cuatro estratos. Resiliencia extrema.</p>
+            </section>
+
+            <!-- Escenario Central: Señaladores izquierdos + Diagrama Isométrico Explotado + Señaladores derechos -->
+            <section class="exploded-stage" aria-label="Diagrama en vista explotada del ecosistema">
+                <!-- Columna izquierda de señaladores (01 - 04) -->
+                <div class="callouts-column callouts-left" id="calloutsLeft"></div>
+
+                <!-- Diagrama Isométrico Central de 4 Capas -->
+                <div class="isometric-viewport" id="isometricViewport">
+                    <div class="isometric-canvas" id="isometricCanvas"></div>
+                    <div class="stage-caption" id="stageCaption">
+                        <span class="caption-key">DISTRIBUCIÓN NACIONAL</span>
+                        <span class="caption-val" id="biomeCoverage">~35% del territorio mexicano</span>
+                    </div>
+                </div>
+
+                <!-- Columna derecha de señaladores (05 - 07) -->
+                <div class="callouts-column callouts-right" id="calloutsRight"></div>
+            </section>
+
+            <!-- Panel inspector inferior contextual (se actualiza al seleccionar cualquier capa o señalador) -->
+            <section class="inspector-strip" id="inspectorStrip" aria-live="polite">
+                <div class="inspector-badge" id="inspectorCode">01</div>
+                <div class="inspector-body">
+                    <div class="inspector-meta">
+                        <span class="inspector-layer" id="inspectorLayer">ESTRATO 01 · DOSEL Y AVIFAUNA</span>
+                        <span class="inspector-sep">•</span>
+                        <span class="inspector-scientific" id="inspectorScientific">Geococcyx californianus</span>
+                    </div>
+                    <p class="inspector-detail" id="inspectorDetail">
+                        Selecciona o pasa el cursor sobre cualquier señalador numerado para aislar su estrato ecológico y explorar especies clave.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Pie del Flyer -->
+            <footer class="flyer-footer">
+                <div class="footer-left">
+                    <div class="pagination-dots" id="paginationDots" role="tablist" aria-label="Paginación de ecosistemas"></div>
+                    <span class="edition-label" id="editionLabel">Edición Marfil · Desierto Chihuahuense</span>
+                </div>
+
+                <div class="footer-right">
+                    <div class="nav-arrows">
+                        <button type="button" class="arrow-btn" id="prevBiomeBtn" aria-label="Ecosistema anterior">&#8592;</button>
+                        <button type="button" class="arrow-btn" id="nextBiomeBtn" aria-label="Siguiente ecosistema">&#8594;</button>
+                    </div>
+                    <span class="domain-mark">ECOSISTEMAS.MX</span>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+    <script src="public/js/ecosistemas.js"></script>
+</body>
+</html>

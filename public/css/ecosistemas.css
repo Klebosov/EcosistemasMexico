@@ -624,3 +624,198 @@ body {
         display: none;
     }
 }
+
+/* ==========================================================================
+   Globo de Texto Lateral con Imagen de Especie (Hover / Focus)
+   ========================================================================== */
+
+.callout-item:hover,
+.callout-item:focus-within {
+    z-index: 30;
+}
+
+.species-popover {
+    position: absolute;
+    top: 50%;
+    width: 600px;
+    background: var(--negro-piano);
+    color: var(--marfil-antiguo);
+    border: 1px solid rgba(234, 228, 215, 0.24);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 40;
+    transition:
+        opacity 0.24s var(--transition-smooth),
+        transform 0.24s var(--transition-smooth),
+        visibility 0.24s ease;
+}
+
+/* Despliegue hacia la IZQUIERDA para recuadros 01 - 04 */
+.callouts-left .species-popover {
+    right: calc(100% + 18px);
+    left: auto;
+    transform: translateY(-50%) translateX(8px) scale(0.96);
+}
+
+.callouts-left .callout-item:hover .species-popover,
+.callouts-left .callout-item:focus-visible .species-popover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0) scale(1);
+}
+
+/* Flecha del globo apuntando a la derecha (hacia el recuadro izquierdo) */
+.callouts-left .species-popover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--negro-piano);
+}
+
+/* Despliegue hacia la DERECHA para recuadros 05 - 07 */
+.callouts-right .species-popover {
+    left: calc(100% + 18px);
+    right: auto;
+    transform: translateY(-50%) translateX(-8px) scale(0.96);
+}
+
+.callouts-right .callout-item:hover .species-popover,
+.callouts-right .callout-item:focus-visible .species-popover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0) scale(1);
+}
+
+/* Flecha del globo apuntando a la izquierda (hacia el recuadro derecho) */
+.callouts-right .species-popover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent var(--negro-piano) transparent transparent;
+}
+
+/* Contenedor de fotografía dentro del globo */
+/* Contenedor adaptativo según la proporción real de cada foto */
+.popover-media {
+    width: 100%;
+    height: auto;
+    max-height: 280px; /* Evita que fotos muy verticales se salgan de la pantalla */
+    border-radius: 10px;
+    overflow: hidden;
+    background: #22211E;
+    border: 1px solid rgba(234, 228, 215, 0.12);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popover-media img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain; /* Muestra la foto completa sin recortar bordes */
+    display: block;
+}
+
+/* Respaldo visual mientras agregas tus fotos en public/img/ */
+.popover-placeholder {
+    width: 100%;
+    min-height: 132px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
+    background: radial-gradient(circle at 50% 30%, #2C2A25 0%, #1B1A17 100%);
+}
+
+.placeholder-icon {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: rgba(234, 228, 215, 0.12);
+    color: var(--marfil-antiguo);
+}
+
+.placeholder-species {
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--marfil-antiguo);
+    line-height: 1.25;
+}
+
+.placeholder-path {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    color: rgba(234, 228, 215, 0.55);
+    word-break: break-all;
+}
+
+/* Pie de foto del globo */
+.popover-caption {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.popover-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #A8B59E;
+}
+
+.popover-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--marfil-antiguo);
+    line-height: 1.3;
+}
+
+/* Ajuste para pantallas medianas o móviles donde no hay margen lateral */
+@media (max-width: 1480px) {
+    .callouts-left .species-popover,
+    .callouts-right .species-popover {
+        left: 50%;
+        right: auto;
+        top: auto;
+        bottom: calc(100% + 12px);
+        transform: translateX(-50%) translateY(6px) scale(0.96);
+    }
+
+    .callouts-left .callout-item:hover .species-popover,
+    .callouts-left .callout-item:focus-visible .species-popover,
+    .callouts-right .callout-item:hover .species-popover,
+    .callouts-right .callout-item:focus-visible .species-popover {
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+
+    .callouts-left .species-popover::before,
+    .callouts-right .species-popover::before {
+        top: 100%;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        border-color: var(--negro-piano) transparent transparent transparent;
+    }
+}

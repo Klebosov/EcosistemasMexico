@@ -22,7 +22,9 @@ const ECOSYSTEMS = [
                 title: "Aves y polinización nocturna",
                 shortDesc: "Correcaminos, halcón y murciélagos.",
                 scientific: "Geococcyx californianus · Parabuteo unicinctus · Leptonycteris yerbabuenae",
-                detail: "Aves rapaces como la aguililla rojinegra cazan en grupo desde cactus altos, mientras el murciélago magueyero migra de noche polinizando agaves y sahuaros."
+                detail: "Aves rapaces como la aguililla rojinegra cazan en grupo desde cactus altos, mientras el murciélago magueyero migra de noche polinizando agaves y sahuaros.",
+                image: "public/Imagenes/Correcaminos.jpg",
+                imageCaption: "Correcaminos norteño (Geococcyx californianus)"
             },
             {
                 num: "02",
@@ -32,7 +34,9 @@ const ECOSYSTEMS = [
                 title: "Cactáceas, agaves y matorral",
                 shortDesc: "Sahuaro, gobernadora, lechuguilla y ocotillo.",
                 scientific: "Carnegiea gigantea · Larrea tridentata · Agave lechuguilla · Fouquieria splendens",
-                detail: "Dominan plantas suculentas y arbustos micrófilos que pierden hojas en sequía. México concentra la mayor diversidad de cactáceas del mundo, con >60% de especies endémicas."
+                detail: "Dominan plantas suculentas y arbustos micrófilos que pierden hojas en sequía. México concentra la mayor diversidad de cactáceas del mundo, con >60% de especies endémicas.",
+                image: "public/Imagenes/Sahuaro.jpg",
+                imageCaption: "Sahuaro (Carnegiea gigantea)"
             },
             {
                 num: "03",
@@ -42,7 +46,9 @@ const ECOSYSTEMS = [
                 title: "Fauna crepuscular y reptiles",
                 shortDesc: "Berrendo, coyote, tortuga del bolsón y cascabel.",
                 scientific: "Antilocapra americana · Canis latrans · Gopherus flavomarginatus · Crotalus atrox",
-                detail: "Los roedores granulívoros sostienen a serpientes de cascabel, zorras del desierto y coyotes; la actividad se concentra al amanecer y anochecer para evitar el estrés térmico."
+                detail: "Los roedores granulívoros sostienen a serpientes de cascabel, zorras del desierto y coyotes; la actividad se concentra al amanecer y anochecer para evitar el estrés térmico.",
+                image: "public/Imagenes/Antilocapra_americana.jpg",
+                imageCaption: "Berrendo (Antilocapra americana)"
             },
             {
                 num: "04",
@@ -52,7 +58,9 @@ const ECOSYSTEMS = [
                 title: "Suelo aluvial y caliche",
                 shortDesc: "Suelos pedregosos con reservas profundas.",
                 scientific: "Xerosol · Regosol · Litosol · Cuencas endorreicas",
-                detail: "Suelos pobres en humus (<1%) con costras calcáreas (caliche) y drenaje rápido; freatofitas como el mezquite (Prosopis) desarrollan raíces de más de 15 m hacia mantos freáticos."
+                detail: "Suelos pobres en humus (<1%) con costras calcáreas (caliche) y drenaje rápido; freatofitas como el mezquite (Prosopis) desarrollan raíces de más de 15 m hacia mantos freáticos.",
+                image: "public/Imagenes/Suelo aluvial.jpg",
+                imageCaption: "Aluvial"
             },
             {
                 num: "05",
@@ -62,7 +70,9 @@ const ECOSYSTEMS = [
                 title: "Clima árido extremo",
                 shortDesc: "Lluvias de 100–400 mm y oscilación >25 °C.",
                 scientific: "Clima BW y BS · Altitud 0 a 2,200 m s. n. m.",
-                detail: "Precipitación escasa y torrencial en verano con evapotranspiración muy superior a la lluvia anual y cambios bruscos entre días abrasadores y noches frías."
+                detail: "Precipitación escasa y torrencial en verano con evapotranspiración muy superior a la lluvia anual y cambios bruscos entre días abrasadores y noches frías.",
+                image: "public/Imagenes/Sol.jpg",
+                imageCaption: "Desierto Chihuahuense"
             },
             {
                 num: "06",
@@ -72,7 +82,9 @@ const ECOSYSTEMS = [
                 title: "Metabolismo CAM y espinas",
                 shortDesc: "Apertura estomática nocturna sin deshidratación.",
                 scientific: "Fotosíntesis CAM · Cutícula cerosa · Tallos fotosintéticos",
-                detail: "Las cactáceas fijan CO₂ durante la noche para evitar perder agua de día; las espinas reflejan radiación solar, condensan rocío matutino y disuaden herbívoros."
+                detail: "Las cactáceas fijan CO₂ durante la noche para evitar perder agua de día; las espinas reflejan radiación solar, condensan rocío matutino y disuaden herbívoros.",
+                image: "public/Imagenes/lechuguilla.jpg",
+                imageCaption: "Agave lechuguilla (Fotosíntesis CAM)"
             },
             {
                 num: "07",
@@ -82,7 +94,9 @@ const ECOSYSTEMS = [
                 title: "Endemismo récord nacional",
                 shortDesc: "Tehuacán-Cuicatlán, Vizcaíno y Cuatro Ciénegas.",
                 scientific: "Región Neártica · Patrimonio Mundial UNESCO",
-                detail: "Se extiende desde Baja California y Sonora hasta el Altiplano y el Valle de Tehuacán-Cuicatlán (Puebla-Oaxaca), funcionando como laboratorio evolutivo de zonas áridas."
+                detail: "Se extiende desde Baja California y Sonora hasta el Altiplano y el Valle de Tehuacán-Cuicatlán (Puebla-Oaxaca), funcionando como laboratorio evolutivo de zonas áridas.",
+                image: "public/Imagenes/Reserva.jpg",
+                imageCaption: "Reserva Tehuacán-Cuicatlán"
             }
         ],
         svgLayers: {
@@ -135,7 +149,9 @@ const ECOSYSTEMS = [
                 title: "Dosel, guacamayas y rapaces",
                 shortDesc: "Guacamaya roja, tucán real y águila arpía.",
                 scientific: "Ara macao · Ramphastos sulfuratus · Harpia harpyja",
-                detail: "La copa continua intercepta más del 90% de la luz solar; aves frugívoras y murciélagos dispersan semillas a kilómetros, mientras el águila arpía regula monos y perezosos."
+                detail: "La copa continua intercepta más del 90% de la luz solar; aves frugívoras y murciélagos dispersan semillas a kilómetros, mientras el águila arpía regula monos y perezosos.",
+                image: "public/Imagenes/Guacamaya.jpg",
+                imageCaption: "Guacamaya roja (Ara macao)"
             },
             {
                 num: "02",
@@ -145,7 +161,9 @@ const ECOSYSTEMS = [
                 title: "Caoba, ceiba y bromelias",
                 shortDesc: "Árboles gigantes con raíces tabulares.",
                 scientific: "Swietenia macrophylla · Ceiba pentandra · Cedrela odorata · Bromeliaceae",
-                detail: "Árboles perennifolios de maderas preciosas desarrollan contrafuertes para anclarse en suelos someros; sus ramas sostienen bromelias tanque que almacenan agua para ranas e insectos."
+                detail: "Árboles perennifolios de maderas preciosas desarrollan contrafuertes para anclarse en suelos someros; sus ramas sostienen bromelias tanque que almacenan agua para ranas.",
+                image: "public/Imagenes/ceiba.jpg",
+                imageCaption: "Ceiba (Ceiba pentandra)"
             },
             {
                 num: "03",
@@ -155,7 +173,9 @@ const ECOSYSTEMS = [
                 title: "Jaguar, tapir y mono araña",
                 shortDesc: "Depredador tope y jardineros de la selva.",
                 scientific: "Panthera onca · Tapirus bairdii · Ateles geoffroyi · Agalychnis callidryas",
-                detail: "En el sotobosque umbrío (<2% de luz), el jaguar ejerce control trófico descendente sobre pecaríes y venados, mientras el tapir centroamericano regenera claros con su ramoneo."
+                detail: "En el sotobosque umbrío (<2% de luz), el jaguar ejerce control trófico descendente sobre pecaríes y venados, mientras el tapir centroamericano regenera claros con su ramoneo.",
+                image: "public/Imagenes/Jaguar.webp",
+                imageCaption: "Jaguar (Panthera onca)"
             },
             {
                 num: "04",
@@ -165,7 +185,9 @@ const ECOSYSTEMS = [
                 title: "Red micorrízica ultrarrápida",
                 shortDesc: "Mineralización inmediata de hojarasca.",
                 scientific: "Acrisol · Ferralsol · Hongos micorrízicos · Atta cephalotes",
-                detail: "Las lluvias intensas lavan los minerales profundos, por lo que casi todos los nutrientes residen en la biomasa viva y son reciclados en semanas por hongos, termitas y hormigas arrieras."
+                detail: "Las lluvias intensas lavan los minerales profundos, por lo que casi todos los nutrientes residen en la biomasa viva y son reciclados en semanas por hongos, termitas y hormigas.",
+                image: "public/Imagenes/hormiga.jpg",
+                imageCaption: "Hormiga arriera (Atta cephalotes)"
             },
             {
                 num: "05",
@@ -175,7 +197,9 @@ const ECOSYSTEMS = [
                 title: "Lluvia > 2,000–4,500 mm",
                 shortDesc: "Humedad relativa >80% y temp. 24–27 °C.",
                 scientific: "Clima Af y Am · Altitud 0 a 1,000 m s. n. m.",
-                detail: "Precipitaciones abundantes durante todo el año sin estación seca marcada; la evapotranspiración del bosque genera ríos voladores que alimentan las lluvias del sureste."
+                detail: "Precipitaciones abundantes durante todo el año sin estación seca marcada; la evapotranspiración del bosque genera ríos voladores que alimentan las lluvias del sureste.",
+                image: "public/Imagenes/chiapas.jpg",
+                imageCaption: "Selva Lacandona, Chiapas"
             },
             {
                 num: "06",
@@ -185,7 +209,9 @@ const ECOSYSTEMS = [
                 title: "Cinco pisos y hojas de goteo",
                 shortDesc: "Ápices alargados contra hongos epífilos.",
                 scientific: "Acumen foliar · Estratificación lumínica · Lianas",
-                detail: "Las hojas presentan puntas alargadas (acumen) que escurren rápidamente el agua pluvial para evitar el crecimiento de algas y líquenes que bloquearían la fotosíntesis."
+                detail: "Las hojas presentan puntas alargadas (acumen) que escurren rápidamente el agua pluvial para evitar el crecimiento de algas y líquenes que bloquearían la fotosíntesis.",
+                image: "public/Imagenes/hoja.jpg",
+                imageCaption: "Monstera deliciosa (Hojas tropicales)"
             },
             {
                 num: "07",
@@ -195,7 +221,9 @@ const ECOSYSTEMS = [
                 title: "Corredor Mesoamericano",
                 shortDesc: "Selva Lacandona, Calakmul y Los Tuxtlas.",
                 scientific: "Región Neotropical · >20,000 especies vasculares",
-                detail: "Abarca Chiapas, Campeche, Quintana Roo, Veracruz y Tabasco; concentra la mayor riqueza biológica por hectárea del país y funciona como sumidero crítico de carbono."
+                detail: "Abarca Chiapas, Campeche, Quintana Roo, Veracruz y Tabasco; concentra la mayor riqueza biológica por hectárea del país y funciona como sumidero crítico de carbono.",
+                image: "public/Imagenes/calakmul.jpg",
+                imageCaption: "Reserva de la Biosfera Calakmul"
             }
         ],
         svgLayers: {
@@ -243,7 +271,9 @@ const ECOSYSTEMS = [
                 title: "Dosel de oyamel y monarca",
                 shortDesc: "Hibernación de monarca, chara y búho moteado.",
                 scientific: "Danaus plexippus · Cyanocitta stelleri · Strix occidentalis",
-                detail: "Las densas copas de oyamel en Michoacán y Estado de México actúan como manta térmica contra heladas, resguardando millones de mariposas monarca cada invierno."
+                detail: "Las densas copas de oyamel en Michoacán y Estado de México actúan como manta térmica contra heladas, resguardando millones de mariposas monarca cada invierno.",
+                image: "public/Imagenes/monarca.jpg",
+                imageCaption: "Mariposa monarca (Danaus plexippus)"
             },
             {
                 num: "02",
@@ -253,7 +283,9 @@ const ECOSYSTEMS = [
                 title: "Ocotes, oyameles y robles",
                 shortDesc: "49 especies de pinos y >160 de encinos.",
                 scientific: "Pinus montezumae · Abies religiosa · Quercus rugosa · Arbutus xalapensis",
-                detail: "México es el principal centro mundial de diversificación de pinos y encinos; su asociación con madroños crea bosques mixtos de alta resiliencia."
+                detail: "México es el principal centro mundial de diversificación de pinos y encinos; su asociación con madroños crea bosques mixtos de alta resiliencia.",
+                image: "public/Imagenes/abies.jpg",
+                imageCaption: "Oyamel (Abies religiosa)"
             },
             {
                 num: "03",
@@ -263,7 +295,9 @@ const ECOSYSTEMS = [
                 title: "Venado, lince y teporingo",
                 shortDesc: "Venado cola blanca y conejo de los volcanes.",
                 scientific: "Odocoileus virginianus · Lynx rufus · Romerolagus diazi · Bassariscus astutus",
-                detail: "Habitan mamíferos forestales como el lince rojo, zorra gris y cacomixtle, además del teporingo, lagomorfo endémico de los zacatonales subalpinos del Eje Neovolcánico."
+                detail: "Habitan mamíferos forestales como el lince rojo, zorra gris y cacomixtle, además del teporingo, lagomorfo endémico de los zacatonales subalpinos del Eje Neovolcánico.",
+                image: "public/Imagenes/teporocho.jpg",
+                imageCaption: "Teporingo (Romerolagus diazi)"
             },
             {
                 num: "04",
@@ -273,7 +307,9 @@ const ECOSYSTEMS = [
                 title: "Andosol y mantillo de acículas",
                 shortDesc: "Infiltración profunda hacia acuíferos urbanos.",
                 scientific: "Andosol húmico · Basalto y andesita · Ectomicorrizas",
-                detail: "Suelos derivados de cenizas volcánicas altamente porosos cubiertos de hojarasca que retienen la lluvia y recargan los mantos freáticos de los valles centrales."
+                detail: "Suelos derivados de cenizas volcánicas altamente porosos cubiertos de hojarasca que retienen la lluvia y recargan los mantos freáticos de los valles centrales.",
+                image: "public/Imagenes/suelo.jpg",
+                imageCaption: "Suelo volcánico Andosol"
             },
             {
                 num: "05",
@@ -283,7 +319,9 @@ const ECOSYSTEMS = [
                 title: "Clima templado subhúmedo",
                 shortDesc: "10–18 °C con lluvias de verano y heladas.",
                 scientific: "Clima Cw y Cb · Altitud 1,600 a 3,400 m s. n. m.",
-                detail: "Precipitaciones entre 700 y 1,500 mm concentradas en verano, seguidas de una estación seca invernal con heladas nocturnas frecuentes en las cumbres."
+                detail: "Precipitaciones entre 700 y 1,500 mm concentradas en verano, seguidas de una estación seca invernal con heladas nocturnas frecuentes en las cumbres.",
+                image: "public/Imagenes/montañas.jpg",
+                imageCaption: "Eje Neovolcánico Transversal"
             },
             {
                 num: "06",
@@ -293,7 +331,9 @@ const ECOSYSTEMS = [
                 title: "Corteza ignífuga y micorrizas",
                 shortDesc: "Adaptación a incendios superficiales periódicos.",
                 scientific: "Corteza suberosa · Rebrote basal · Amanita · Boletus",
-                detail: "Los pinos adultos poseen cortezas gruesas que aíslan el cambium del fuego superficial, mientras los encinos rebrotan desde la cepa y hongos ectomicorrízicos nutren sus raíces."
+                detail: "Los pinos adultos poseen cortezas gruesas que aíslan el cambium del fuego superficial, mientras los encinos rebrotan desde la cepa y hongos ectomicorrízicos nutren sus raíces.",
+                image: "public/Imagenes/ocote.jpg",
+                imageCaption: "Ocote (Pinus montezumae)"
             },
             {
                 num: "07",
@@ -303,7 +343,9 @@ const ECOSYSTEMS = [
                 title: "Fábrica de agua y carbono",
                 shortDesc: "Bosque La Primavera, Tarahumara e Izta-Popo.",
                 scientific: "Sierras Madre Occidental/Oriental · Eje Neovolcánico",
-                detail: "Abastece de agua dulce a las mayores zonas metropolitanas de México (CDMX, Guadalajara y Monterrey) y almacena carbono forestal a largo plazo."
+                detail: "Abastece de agua dulce a las mayores zonas metropolitanas de México (CDMX, Guadalajara y Monterrey) y almacena carbono forestal a largo plazo.",
+                image: "public/Imagenes/bsoque primavera.jpg",
+                imageCaption: "Bosque La Primavera, Jalisco"
             }
         ],
         svgLayers: {
@@ -354,7 +396,9 @@ const ECOSYSTEMS = [
                 title: "Quetzal, pavón y tucaneta",
                 shortDesc: "Dispersores endémicos de aguacatillos.",
                 scientific: "Pharomachrus mocinno · Oreophasis derbianus · Aulacorhynchus prasinus",
-                detail: "Hogar del quetzal mesoamericano y el pavón cornudo (endémico de Chiapas y Guatemala), aves frugívoras indispensables para dispersar semillas de lauráceas."
+                detail: "Hogar del quetzal mesoamericano y el pavón cornudo (endémico de Chiapas y Guatemala), aves frugívoras indispensables para dispersar semillas de lauráceas.",
+                image: "public/Imagenes/Quetzal.webp",
+                imageCaption: "Quetzal (Pharomachrus mocinno)"
             },
             {
                 num: "02",
@@ -364,7 +408,9 @@ const ECOSYSTEMS = [
                 title: "Helechos arborescentes y orquídeas",
                 shortDesc: "Liquidámbar, magnolias y >60% de orquídeas.",
                 scientific: "Cyathea fulva · Liquidambar styraciflua · Magnolia · Orchidaceae",
-                detail: "Conviven árboles de linaje boreal (liquidámbar, haya, encino) con helechos arborescentes jurásicos y más de la mitad de todas las especies de orquídeas de México."
+                detail: "Conviven árboles de linaje boreal (liquidámbar, haya, encino) con helechos arborescentes jurásicos y más de la mitad de todas las especies de orquídeas de México.",
+                image: "public/Imagenes/helecho.jpg",
+                imageCaption: "Helecho arborescente (Cyathea fulva)"
             },
             {
                 num: "03",
@@ -374,7 +420,9 @@ const ECOSYSTEMS = [
                 title: "Salamandras, ranas y ocelote",
                 shortDesc: "Anfibios de respiración cutánea y felinos.",
                 scientific: "Bolitoglossa · Charadrahyla · Leopardus pardalis · Potos flavus",
-                detail: "La saturación hídrica permite la respiración cutánea de salamandras pletodóntidas sin pulmones y ranas arborícolas con altísimo microendemismo por cañada."
+                detail: "La saturación hídrica permite la respiración cutánea de salamandras pletodóntidas sin pulmones y ranas arborícolas con altísimo microendemismo por cañada.",
+                image: "public/Imagenes/Salamandra.webp",
+                imageCaption: "Salamandra (Bolitoglossa)"
             },
             {
                 num: "04",
@@ -384,7 +432,9 @@ const ECOSYSTEMS = [
                 title: "Mantillo ácido y briofitas",
                 shortDesc: "Regula manantiales incluso en estiaje.",
                 scientific: "Andosol ácido · Musgos y hepáticas · Captación oculta",
-                detail: "Gruesas alfombras de musgo y hojarasca ácida absorben la humedad de la neblina y liberan agua cristalina de forma constante hacia las cuencas bajas."
+                detail: "Gruesas alfombras de musgo y hojarasca ácida absorben la humedad de la neblina y liberan agua cristalina de forma constante hacia las cuencas bajas.",
+                image: "public/Imagenes/briofitas_6485_orig.jpg",
+                imageCaption: "Briofitas y musgos epífitos"
             },
             {
                 num: "05",
@@ -394,7 +444,9 @@ const ECOSYSTEMS = [
                 title: "Condensación orográfica",
                 shortDesc: "Niebla constante entre 800 y 2,500 m.",
                 scientific: "Clima Cf y Cw · Lluvia > 1,800 mm + Niebla",
-                detail: "Los vientos húmedos del Golfo y el Pacífico chocan contra las laderas de barlovento y condensan gotas directamente sobre el follaje (precipitación horizontal)."
+                detail: "Los vientos húmedos del Golfo y el Pacífico chocan contra las laderas de barlovento y condensan gotas directamente sobre el follaje (precipitación horizontal).",
+                image: "public/Imagenes/neblina.jpg",
+                imageCaption: "Neblina orográfica en montaña"
             },
             {
                 num: "06",
@@ -404,7 +456,9 @@ const ECOSYSTEMS = [
                 title: "Refugio del Pleistoceno",
                 shortDesc: "Fusión Neártica-Neotropical altamente vulnerable.",
                 scientific: "Zona de transición mexicana · Ecosistema prioritario",
-                detail: "Actuó como refugio climático durante las glaciaciones; al estar fragmentado en islas de montaña, es el ecosistema terrestre más amenazado de México."
+                detail: "Actuó como refugio climático durante las glaciaciones; al estar fragmentado en islas de montaña, es el ecosistema terrestre más amenazado de México.",
+                image: "public/Imagenes/magnolia.jpg",
+                imageCaption: "Magnolia mexicana"
             },
             {
                 num: "07",
@@ -414,7 +468,9 @@ const ECOSYSTEMS = [
                 title: "El Triunfo, Oaxaca y Manantlán",
                 shortDesc: "Máxima densidad de especies por hectárea.",
                 scientific: "Sierra Madre de Chiapas · Sierra Norte · Veracruz",
-                detail: "Destacan la Reserva El Triunfo (Chiapas), Sierra Norte de Oaxaca, Xalapa-Coatepec (Veracruz) y la Sierra de Manantlán (Jalisco-Colima)."
+                detail: "Destacan la Reserva El Triunfo (Chiapas), Sierra Norte de Oaxaca, Xalapa-Coatepec (Veracruz) y la Sierra de Manantlán (Jalisco-Colima).",
+                image: "public/Imagenes/el triunfo.jpg",
+                imageCaption: "Reserva El Triunfo, Chiapas"
             }
         ],
         svgLayers: {
@@ -461,7 +517,9 @@ const ECOSYSTEMS = [
                 title: "Águila real y aves de estepa",
                 shortDesc: "Cazadores de planicie y >300 aves migratorias.",
                 scientific: "Aquila chrysaetos · Falco femoralis · Athene cunicularia · Ammodramus",
-                detail: "Las corrientes térmicas sustentan al águila real y halcón aplomado; cada invierno arriban cientos de especies de aves de pastizal desde Canadá y Estados Unidos."
+                detail: "Las corrientes térmicas sustentan al águila real y halcón aplomado; cada invierno arriban cientos de especies de aves de pastizal desde Canadá y Estados Unidos.",
+                image: "public/Imagenes/aguila real.jpg",
+                imageCaption: "Águila real (Aquila chrysaetos)"
             },
             {
                 num: "02",
@@ -471,7 +529,9 @@ const ECOSYSTEMS = [
                 title: "Zacate navajita y búfalo",
                 shortDesc: "Meristemos basales resistentes a sequía y fuego.",
                 scientific: "Bouteloua gracilis · Buchloe dactyloides · Aristida · Muhlenbergia",
-                detail: "Gramíneas perennes nativas cuyos puntos de crecimiento se ubican a ras de suelo, permitiéndoles rebrotar rápidamente tras el pastoreo o incendios estacionales."
+                detail: "Gramíneas perennes nativas cuyos puntos de crecimiento se ubican a ras de suelo, permitiéndoles rebrotar rápidamente tras el pastoreo o incendios estacionales.",
+                image: "public/Imagenes/zacate.jpg",
+                imageCaption: "Zacate navajita (Bouteloua gracilis)"
             },
             {
                 num: "03",
@@ -481,7 +541,9 @@ const ECOSYSTEMS = [
                 title: "Perrito llanero y bisonte",
                 shortDesc: "Colonias subterráneas y manadas silvestres.",
                 scientific: "Cynomys mexicanus · Bison bison · Taxidea taxus · Vulpes macrotis",
-                detail: "El perrito llanero mexicano (endémico) es una especie clave: sus colonias mantienen el pasto corto y proveen refugio y alimento a tlalcoyotes, tecolotes y zorras norteñas."
+                detail: "El perrito llanero mexicano (endémico) es una especie clave: sus colonias mantienen el pasto corto y proveen refugio y alimento a tlalcoyotes, tecolotes y zorras norteñas.",
+                image: "public/Imagenes/perrito llanero.jpg",
+                imageCaption: "Perrito llanero mexicano (Cynomys mexicanus)"
             },
             {
                 num: "04",
@@ -491,7 +553,9 @@ const ECOSYSTEMS = [
                 title: "Suelo fértil y carbono oculto",
                 shortDesc: "Hasta 70% de la biomasa vive bajo tierra.",
                 scientific: "Phaeozem · Kastanozem · Red radicular fibrosa",
-                detail: "Las raíces profundas forman un entramado denso que fija la tierra contra la erosión eólica y acumula grandes reservas de carbono orgánico en el subsuelo."
+                detail: "Las raíces profundas forman un entramado denso que fija la tierra contra la erosión eólica y acumula grandes reservas de carbono orgánico en el subsuelo.",
+                image: "public/Imagenes/suelo phaoezem.webp",
+                imageCaption: "Suelo Phaeozem y raíces profundas"
             },
             {
                 num: "05",
@@ -501,7 +565,9 @@ const ECOSYSTEMS = [
                 title: "Clima semiárido templado",
                 shortDesc: "Lluvias de 300–600 mm y vientos secos.",
                 scientific: "Clima BS · Altitud 1,100 a 2,500 m s. n. m.",
-                detail: "Se desarrolla en mesetas y llanuras de pendiente suave con inviernos fríos y secos, heladas frecuentes y lluvias concentradas entre julio y septiembre."
+                detail: "Se desarrolla en mesetas y llanuras de pendiente suave con inviernos fríos y secos, heladas frecuentes y lluvias concentradas entre julio y septiembre.",
+                image: "public/Imagenes/Chihuahua,_Mexico.jpg",
+                imageCaption: "Llanuras del Altiplano Norte"
             },
             {
                 num: "06",
@@ -511,7 +577,9 @@ const ECOSYSTEMS = [
                 title: "Bioturbación e infiltración",
                 shortDesc: "Galerías que recargan y fertilizan el suelo.",
                 scientific: "Ingeniería de hábitat · Reciclaje mineral",
-                detail: "Las madrigueras excavadas por roedores coloniales airean el suelo compactado, multiplican la infiltración del agua de lluvia y enriquecen los nutrientes superficiales."
+                detail: "Las madrigueras excavadas por roedores coloniales airean el suelo compactado, multiplican la infiltración del agua de lluvia y enriquecen los nutrientes superficiales.",
+                image: "public/Imagenes/tecolote.jpg",
+                imageCaption: "Tecolote llanero (Athene cunicularia)"
             },
             {
                 num: "07",
@@ -521,7 +589,9 @@ const ECOSYSTEMS = [
                 title: "Janos, Mapimí y Ojuelos",
                 shortDesc: "Corredor biológico del norte y Altos de Jalisco.",
                 scientific: "Reserva Biosfera Janos · Llanos de Ojuelos",
-                detail: "Destacan Janos en Chihuahua (donde habita una manada silvestre de bisonte americano) y los Llanos de Ojuelos en el noreste de Jalisco y Zacatecas."
+                detail: "Destacan Janos en Chihuahua (donde habita una manada silvestre de bisonte americano) y los Llanos de Ojuelos en el noreste de Jalisco y Zacatecas.",
+                image: "public/Imagenes/Buffalo_in_Chihuahua.jpg",
+                imageCaption: "Bisonte americano en Janos, Chihuahua"
             }
         ],
         svgLayers: {
@@ -567,7 +637,9 @@ const ECOSYSTEMS = [
                 title: "Flamenco, fragata y espátula",
                 shortDesc: "Colonias de anidación en lagunas costeras.",
                 scientific: "Phoenicopterus ruber · Fregata magnificens · Platalea ajaja",
-                detail: "Las copas del manglar protegen colonias reproductivas de flamencos rosados, garzas, pelícanos y fragatas frente a depredadores terrestres."
+                detail: "Las copas del manglar protegen colonias reproductivas de flamencos rosados, garzas, pelícanos y fragatas frente a depredadores terrestres.",
+                image: "public/Imagenes/flamenco.jpg",
+                imageCaption: "Flamenco rosado (Phoenicopterus ruber)"
             },
             {
                 num: "02",
@@ -577,7 +649,9 @@ const ECOSYSTEMS = [
                 title: "Mangle rojo, negro y blanco",
                 shortDesc: "Raíces zancudas, neumatóforos y glándulas de sal.",
                 scientific: "Rhizophora mangle · Avicennia germinans · Laguncularia racemosa",
-                detail: "El mangle rojo ancla el borde marino con raíces zancudas; tierra adentro, el mangle negro respira mediante neumatóforos verticales y excreta sal por sus hojas."
+                detail: "El mangle rojo ancla el borde marino con raíces zancudas; tierra adentro, el mangle negro respira mediante neumatóforos verticales y excreta sal por sus hojas.",
+                image: "public/Imagenes/mangle.jpg",
+                imageCaption: "Mangle rojo (Rhizophora mangle)"
             },
             {
                 num: "03",
@@ -587,7 +661,9 @@ const ECOSYSTEMS = [
                 title: "Cocodrilo, manatí y arrecife",
                 shortDesc: "Guardería de peces, camarón y tortugas.",
                 scientific: "Crocodylus moreletii · Trichechus manatus · Acropora palmata",
-                detail: "Las raíces sumergidas funcionan como guardería para juveniles de pargos, langostas y camarones que al madurar migran hacia los arrecifes coralinos."
+                detail: "Las raíces sumergidas funcionan como guardería para juveniles de pargos, langostas y camarones que al madurar migran hacia los arrecifes coralinos.",
+                image: "public/Imagenes/manati.jpg",
+                imageCaption: "Manatí del Caribe (Trichechus manatus)"
             },
             {
                 num: "04",
@@ -597,7 +673,9 @@ const ECOSYSTEMS = [
                 title: "Turba anaeróbica profunda",
                 shortDesc: "Secuestro 4 veces mayor que selvas terrestres.",
                 scientific: "Sedimento anóxico · Plataforma calcárea · Carbono azul",
-                detail: "La ausencia de oxígeno en los sedimentos inundados frena la descomposición, atrapando carbono orgánico en la turba durante miles de años."
+                detail: "La ausencia de oxígeno en los sedimentos inundados frena la descomposición, atrapando carbono orgánico en la turba durante miles de años.",
+                image: "public/Imagenes/el-carbono-azul-1.jpg",
+                imageCaption: "Sedimento costero de carbono azul"
             },
             {
                 num: "05",
@@ -607,7 +685,9 @@ const ECOSYSTEMS = [
                 title: "Filtro entre ríos, cenotes y mar",
                 shortDesc: "Salinidad fluctuante de 0 a 40 ups.",
                 scientific: "Agua cálida 26–29 °C · Mareas y descargas dulces",
-                detail: "Retiene sedimentos y nutrientes procedentes de ríos y cenotes, garantizando que al arrecife coralino llegue agua cristalina y oligotrófica."
+                detail: "Retiene sedimentos y nutrientes procedentes de ríos y cenotes, garantizando que al arrecife coralino llegue agua cristalina y oligotrófica.",
+                image: "public/Imagenes/laguna.jpg",
+                imageCaption: "Laguna costera y estuario"
             },
             {
                 num: "06",
@@ -617,7 +697,9 @@ const ECOSYSTEMS = [
                 title: "Escudo vivo antihuracanes",
                 shortDesc: "Disipa entre 70% y 90% de la energía del oleaje.",
                 scientific: "Atenuación hidráulica · Estabilización de línea de costa",
-                detail: "La barrera arrecifal rompe el oleaje oceánico y las raíces del manglar amortiguan marejadas ciclónicas, protegiendo comunidades costeras de la erosión."
+                detail: "La barrera arrecifal rompe el oleaje oceánico y las raíces del manglar amortiguan marejadas ciclónicas, protegiendo comunidades costeras de la erosión.",
+                image: "public/Imagenes/coral.webp",
+                imageCaption: "Coral cuerno de alce (Acropora palmata)"
             },
             {
                 num: "07",
@@ -627,7 +709,9 @@ const ECOSYSTEMS = [
                 title: "Sian Ka'an, Celestún y Marismas",
                 shortDesc: "4.º lugar mundial en extensión de manglares.",
                 scientific: "Sistema Arrecifal Mesoamericano · Nayarit a Quintana Roo",
-                detail: "México ocupa el cuarto sitio global en superficie de manglar (Marismas Nacionales, Celestún, Sian Ka'an) y comparte el segundo arrecife más extenso del planeta."
+                detail: "México ocupa el cuarto sitio global en superficie de manglar (Marismas Nacionales, Celestún, Sian Ka'an) y comparte el segundo arrecife más extenso del planeta.",
+                image: "public/Imagenes/reserva-de-la-biosfera-de-sian-kaan-resize-scaled.jpg.webp",
+                imageCaption: "Reserva de la Biosfera Sian Ka'an"
             }
         ],
         svgLayers: {
@@ -747,6 +831,8 @@ function renderIsometricSVG(biome) {
 }
 
 function createCalloutHTML(callout, globalIdx) {
+    const caption = callout.imageCaption || callout.scientific.split("·")[0].trim();
+    const imgPath = callout.image || "";
     return `
         <div
             class="callout-item ${globalIdx === activeCalloutIndex ? "is-active" : ""}"
@@ -758,6 +844,26 @@ function createCalloutHTML(callout, globalIdx) {
             <span class="callout-num">${callout.num}</span>
             <span class="callout-title">${callout.title}</span>
             <span class="callout-desc">${callout.shortDesc}</span>
+
+            <div class="species-popover" role="tooltip">
+                <div class="popover-media">
+                    <img
+                        src="${imgPath}"
+                        alt="${caption}"
+                        loading="lazy"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                    >
+                    <div class="popover-placeholder" style="display: none;">
+                        <span class="placeholder-icon">FOTO ESPECIE</span>
+                        <span class="placeholder-species">${caption}</span>
+                        <span class="placeholder-path">${imgPath}</span>
+                    </div>
+                </div>
+                <div class="popover-caption">
+                    <span class="popover-tag">ESPECIE · ${callout.num}</span>
+                    <span class="popover-name">${caption}</span>
+                </div>
+            </div>
         </div>
     `;
 }
